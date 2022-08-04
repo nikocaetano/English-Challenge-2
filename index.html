@@ -6,33 +6,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Document</title>
+    <title>English Challenge 2</title>
 </head>
 
 <body>
     <section>
-        <div>
+        <div class="header">
             <figure><img src="./images/hamburger.png"></figure>
-            <h1>Flavo</h1>
+            <h1>flavo</h1>
             <figure><img src="./images/2.png" /></figure>
         </div>
-        <div></div>
-        <figure>
-            <img src="./images/intensity.png" />
-        </figure>
-        <h2>Intensity $15</h2>
-        <h3>What's inside</h3>
-        <p>Chili, oregano, safran, paprika</p>
-        <h3>Why we love it</h3>
-        <p>This one will add a little savoury flavour to any food and turn any meal to culinary masterpiece</p>
-        <form>
-            <label for="">BAG (75G)</label>
-            <input type="checkbox">
-            <label for="">JAR (150G)</label>
-            <input type="checkbox">
-            <input type="number">
-        </form>
-        <button>ADD TO CART</button>
+        <div class="main">
+            <figure>
+                <img src="./images/intensity.png" />
+            </figure>
+            <div class="escrita">
+                <h2>Intensity $15</h2>
+                <div class="inside">
+                    <h3>What's inside</h3>
+                    <p>Chili, oregano, safran, paprika</p>
+                </div>
+                <div class="loveIt">
+                    <h3>Why we love it</h3>
+                </div>
+                <p>This one will add a little savoury flavour to any food and turn any meal to culinary masterpiece</p>
+                <form>
+                    <label for="bag">BAG (75G)</label>
+                    <input id="bag" type="checkbox" name="inpBag" checked />
+                    <label for="jar">JAR (150G)</label>
+                    <input id="jar" type="checkbox" name="inpJar"/>
+                </form>
+                <div class="send">
+                    <input type="number">
+                    <button>ADD TO CART</button>
+                </div>
+            </div>
         </div>
     </section>
 </body>

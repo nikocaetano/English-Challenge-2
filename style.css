@@ -1,20 +1,138 @@
-*{
-    margin:0;
-    padding:0;
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Almarai:wght@300&family=Bebas+Neue&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-@media only screen and (max-width:800px) and (min-width:360px){
+body {
+    display: none;
+}
 
-    body{
-        background-color:#adc178;
+@media only screen and (max-width:800px) and (min-width:360px) {
+
+    body {
+        background-color: #96a755;
+        display: initial;
     }
-    section{
-        background-color:orange;
+
+    section {
+        background-color: #f1b641;
         border: black solid;
         width: 80%;
-        height: 80%;
-        
+        height: 180vw;
+        position: relative;
+        left: 10%;
+        top: 5vw;
+        border-radius: 30px;
     }
 
+    .header {
+        border-radius: 30px;
+        display: flex;
+        width: 95%;
+        justify-content: space-between;
+        background-color: #ffecc0;
+        padding: 0px 15px 0px 15px;
+        position: absolute;
+        left: 2vw;
+        top: 6vw;
+        font-family: 'Alex Brush', sans-serif;
+    }
+
+    .header img {
+        width: 5vw;
+        padding-top: 5px;
+    }
+
+    .main {
+        font-family: sans-serif;
+    }
+
+    .main img {
+        position: relative;
+        top: 16vw;
+        left: 17%;
+    }
+    h2{
+        font-size: 40px;
+        word-spacing: 20vw;
+    }
+    h3{
+        font-size: 25px;
+    }
+    h2,
+    h3 {
+        font-family: 'Bebas Neue';
+    }
+
+    p {
+        font-family: 'Almarai';
+    }
+
+    .escrita {
+        position: relative;
+        top: 15vw;
+        padding: 0px 30px 0px 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .inside {
+        padding-top: 15px;
+    }
+
+    .loveIt {
+        padding-top: 10px;
+    }
+
+    form {
+        font-family: 'Almarai';
+        display: flex;
+        gap: 20px;
+
+    }
+
+    form input {
+        display: none;
+    }
+
+    label {
+        padding: 22px 0px 22px 25px; 
+    }
+
+    label::before {
+        content: '';
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        border: solid 1px black;
+        transition: 0.2s ease-in-out;
+    }
+    .send{
+        display: flex;
+        flex-wrap: wrap;
+        height: 25vw;
+    }
+    .send input{
+        width:70vw;
+        height: 8vw;
+        border-radius: 30px;
+        border: solid 1px black;
+        background-color: transparent;
+    }
+    .send button{
+        width:70vw;
+        height: 8vw;
+        border-radius: 30px;
+        background-color: black;
+        color:white;
+    }
+    
+    input:checked + label::before { 
+        background-color: #000; 
+      }
 }
