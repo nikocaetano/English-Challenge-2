@@ -111,6 +111,7 @@ body {
         border-radius: 50%;
         border: solid 1px black;
         transition: 0.2s ease-in-out;
+        cursor: pointer;
     }
     .send{
         display: flex;
