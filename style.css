@@ -55,13 +55,16 @@ body {
         top: 16vw;
         left: 17%;
     }
-    h2{
+
+    h2 {
         font-size: 40px;
         word-spacing: 20vw;
     }
-    h3{
+
+    h3 {
         font-size: 25px;
     }
+
     h2,
     h3 {
         font-family: 'Bebas Neue';
@@ -71,13 +74,18 @@ body {
         font-family: 'Almarai';
     }
 
-    .escrita {
+    .write {
         position: relative;
         top: 15vw;
         padding: 0px 30px 0px 15px;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
+    }
+
+    .writeH2 {
+        display: flex;
+        justify-content: space-between;
     }
 
     .inside {
@@ -100,7 +108,7 @@ body {
     }
 
     label {
-        padding: 22px 0px 22px 25px; 
+        padding: 22px 0px 22px 25px;
     }
 
     label::before {
@@ -113,27 +121,66 @@ body {
         transition: 0.2s ease-in-out;
         cursor: pointer;
     }
-    .send{
+
+    .send {
         display: flex;
         flex-wrap: wrap;
-        height: 25vw;
+        height: 20vw;
     }
-    .send input{
-        width:70vw;
+
+    .addBag {
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 12px 0px 12px;
+        border: solid 1px black;
+        height: 9vw;
+        width: 70vw;
+        border-radius: 30px;
+        align-items: center;
+    }
+
+    .addBag p {
+        font-weight: bolder;
+        font-size: 20px;
+    }
+
+    .less,
+    .plus {
+        position: relative;
+        bottom: 3px;
+    }
+
+    .send input {
+        width: 70vw;
         height: 8vw;
         border-radius: 30px;
         border: solid 1px black;
         background-color: transparent;
     }
-    .send button{
-        width:70vw;
-        height: 8vw;
+
+    .send button {
+        width: 70vw;
+        height: 9vw;
         border-radius: 30px;
         background-color: black;
-        color:white;
+        color: white;
     }
-    
-    input:checked + label::before { 
-        background-color: #000; 
-      }
+
+    input:checked+label::before {
+        background-color: #000;
+    }
+
+    form input {
+        appearance: none;
+        cursor: pointer;
+        outline: none;
+    }
+
+    form input::before {
+        content: '';
+    }
+
+    form input:checked:before {
+        opacity: 1;
+    }
 }

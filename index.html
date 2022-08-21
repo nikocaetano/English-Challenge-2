@@ -20,27 +20,32 @@
             <figure>
                 <img src="./images/intensity.png" />
             </figure>
-            <div class="escrita">
-                <h2>Intensity $15</h2>
+            <div class="write">
+                <div class="writeH2">
+                    <h2>Intensity</h2>
+                    <h2 class="value">$15</h2>
+                </div>
                 <div class="inside">
                     <h3>What's inside</h3>
                     <p>Chili, oregano, safran, paprika</p>
                 </div>
                 <div class="loveIt">
                     <h3>Why we love it</h3>
-                    <p>This one will add a little savoury flavour to any food and turn any meal to culinary masterpiece</p>
+                    <p>This one will add a little savoury flavour to any food and turn any meal to culinary masterpiece
+                    </p>
                 </div>
                 <form>
-                    <input id="bag" type="radio" name="choice" checked />
+                    <input onChange="firstPrice()" id="bag" type="radio" name="choice" checked />
                     <label for="bag">BAG (75G)</label>
-                    <input id="jar" type="radio" name="choice" />
-                    <label for="jar">JAR (150G)</label>                    
-                </form>    
+                    <input onChange="secondPrice()" id="jar" type="radio" name="choice" />
+                    <label for="jar">JAR (150G)</label>
+                </form>
                 <div class="send">
-                    <p onclick="Less()">-</p>
-                    <p class="addOne">0</p>
-                    <p onclick="Add()">+</p>
-                    <!--<input type="number"> -->
+                    <div class="addBag">
+                        <p class="less" onclick="Less()">-</p>
+                        <p class="addOne">1</p>
+                        <p class="plus" onclick="Add()">+</p>
+                    </div>
                     <button>ADD TO CART</button>
                 </div>
             </div>
